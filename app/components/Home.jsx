@@ -20,12 +20,27 @@ function Home() {
   const [texts, setTexts] = useState(translations.EN)
   
   useEffect(() => {
-    if (country === "DE") {
-        setTexts(translations.DE);
-    } else {
-        setTexts(translations.EN);
+    switch (country) {
+        case "DE":
+            setTexts(translations.DE);
+            break;
+        case "PT":
+            setTexts(translations.PT);
+            break;
+        case "FR":
+            setTexts(translations.FR);
+            break;
+        case "NL":
+            setTexts(translations.NL);
+            break;
+        case "IT":
+            setTexts(translations.IT);
+            break;
+        default:
+            setTexts(translations.EN);
     }
 }, [country]);
+
 
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);

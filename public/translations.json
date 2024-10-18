@@ -1,13 +1,32 @@
 {
-    "EN": {
-      "online": {
-        "treading": "Free Trading Course"
-      }
-    },
-    "DE": {
-      "online": {
-        "treading": "Kostenloser Trading-Kurs"
-      }
+  "EN": {
+    "online": {
+      "treading": "Free Trading Course"
+    }
+  },
+  "DE": {
+    "online": {
+      "treading": "Kostenloser Trading-Kurs"
+    }
+  },
+  "PT": {  
+    "online": {
+      "treading": "Curso de Trading Gratuito"
+    }
+  },
+  "FR": {  
+    "online": {
+      "treading": "Cours de Trading Gratuit"
+    }
+  },
+  "NL": {  
+    "online": {
+      "treading": "Gratis Handelscursus"
+    }
+  },
+  "IT": { 
+    "online": {
+      "treading": "Corso di Trading Gratuito"
     }
   }
-  
+}

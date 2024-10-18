@@ -1,0 +1,321 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --star-size: 60px;
+  --star-color: #fff;
+  --star-background: #fc0;
+}
+
+main{
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+ 
+}
+
+.light-bg {
+    background-color: #f1f3f5;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.imgtog5{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+@media (max-width: 640px) {
+    nav {
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+  
+    .left-images img {
+      width: 50px;
+      height: 40px;
+    }
+  
+    .right-images {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;    /* Center the items */
+    }
+  
+    .right-images img {
+      width: 80px;
+      margin-bottom: 0.5rem; /* Add space between image and text */
+    }
+  
+    .text-nav {
+      margin-left: 0;        /* Reset margin for centering */
+      font-size: 10px;
+      text-align: center;     /* Center the text */
+    }
+  }
+  
+  /* Tablet and Larger Screens */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    header {
+      height: 4rem;
+    }
+  
+    .left-images img {
+      width: 36px;
+      height: 30px;
+    }
+  
+    .right-images img {
+      width: 100px;
+    }
+  
+    .text-nav {
+      font-size: 11px;
+    }
+  }
+/*   
+  @media (min-width: 1025px) {
+    header {
+      height: 4.5rem;
+    }
+  
+    .left-images img {
+      width: 38px;
+      height: 32px;
+    }
+  
+    .right-images img {
+      width: 114px;
+    }
+  
+    .text-nav {
+      font-size: 12px;
+      margin-left: 0.5rem;
+    }
+  } */
+
+  @media (max-width: 640px) {
+    /* .button1 {
+        width: 22rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    } */
+
+    .images1 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* .blur-white {
+       inset: auto 10% 2%
+    } */
+    .to-\[\#f1f3f5\]{
+      /* background-color: red; */
+      height: 3rem;
+      inset: auto 10% 2%
+
+    }
+
+    .desc1 {
+        font-size: 16px;
+        width: 25rem;
+    }
+
+    .title{
+        font-size: 32px;
+        justify-content: center;
+        display: flex;
+        width: 14rem;
+    }
+    .title1{
+        width: 24rem;
+        font-size: 28px;
+
+    }
+    .section3{
+      margin-bottom: -10rem;
+      padding-bottom: 10px;
+    }
+    .max-w-md {
+      max-width: none;
+    }
+    .form{
+      text-align: none;
+    }
+  
+
+
+  }
+
+
+  .footer_blur {
+    filter: blur(200px);
+    background-image: linear-gradient(90deg, #13f97b, #00d560);
+    border-radius: 100%;
+    width: 550px;
+    height: 124px;
+    position: absolute;
+    bottom: 55rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @media (max-width: 768px) {
+  .footer_blur1{
+    filter: blur(185px);
+    background-image: linear-gradient(90deg, #13f97b, #00d560);
+    border-radius: 100%;
+    width: 550px;
+    height: 120px;
+    position: absolute;
+    transform: translate(-50%);
+    left: 40%;
+    z-index: 1; 
+
+  }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+  .img-foot {
+    bottom: 159.2vh;
+    left: 47vw;
+  }
+}
+@media (min-width: 430px) {
+  .img-foot {
+    bottom: 154.4vh;
+    left: 47.5vw;
+  }
+}
+
+@media (max-width: 360px) {
+  .img-foot {
+    bottom: 207.4vh;
+    left: 47vw;
+  }
+}
+
+
+
+
+
+
+
+
+  .react-tel-input .flag-dropdown{
+    border: none;
+    background-color: #edf1f6;
+  }
+
+
+/* From Uiverse.io by AbanoubMagdy1 */ 
+/* Hide the default checkbox */
+.container input {
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background: white;
+}
+
+.container:hover {
+  /* background: rgba(197, 197, 197, 0.527); */
+}
+
+.line {
+  width: calc(90% - 12px);
+  height: 1.5px;
+  left: 4px;
+  background: rgb(58, 58, 58);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .7s transform cubic-bezier(0,1,.33,1.2), background .4s;
+}
+
+.line-indicator {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.container input:checked ~ .line-indicator {
+  transform: translateY(-50%);
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0; /* Ensures elements start as invisible */
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /* Start off to the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Move into place */
+  }
+}
+
+.fadeRight {
+  animation-name: fadeRight;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.opacity-0 {
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.animate {
+  opacity: 1; /* Ensure the card is visible after animation */
+}
+
+
+
+@media (max-width: 768px) {
+  .images-mobile {
+    inset: 80% 0 0 10%;
+  }
+}
